@@ -125,6 +125,7 @@ class MyAuthentication(BaseAuthentication):
             raise exceptions.AuthenticationFailed(msg)
         return (jwt_value, userid)
 
+
 class ProOrder(APIView):
 
     authentication_classes = [MyAuthentication]
